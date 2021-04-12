@@ -1,0 +1,305 @@
+/*
+#464759
+#D98943
+#0f2e5e
+#333333
+*/
+body {
+  font-family: "Roboto",sans-serif;
+  padding-top: 11%; /*scroll padding */
+  margin:0;
+}
+a {
+  color: #0f2e5e;
+}
+a:hover {
+  color: #D98943;
+}
+
+/* navigation */
+.navbar__box {
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* fixed header */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  z-index: 5; /*bring above content*/
+  /*
+  Horizontal: right (+), left (-)
+  Vertical: bottom (+), top (-)
+  Blur: higher = more blur
+  Shadow size: increase (+), decrease (-)
+  Colour
+  */
+  box-shadow: 0 8px 6px -6px black;
+}
+.navbar__item {
+  display: inline-block;
+  padding: 2% 1%;
+  margin-right: 5px;
+  width: 15%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  white-space: nowrap; /*keep text on one line*/
+  overflow: hidden;
+  font-weight: 700;
+  color: #0f2e5e;
+}
+.navbar__item:hover{
+  color: #D98943;
+}
+.logo {
+  display: block;
+  padding: 2% 0;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+
+/* Title section */
+/* container for img and text */
+.title__box {
+  position: relative;
+  width: 100%;
+}
+.title__img-box {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+.title__img {
+  width: 100%;
+  /* center */
+  margin: 0 auto;
+  filter: brightness(20%);
+}
+.title__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  white-space: nowrap; /*keep text on one line*/
+}
+.title__text-heading {
+  font-size: 3em; /*default for h1 is 2em*/
+}
+.title__text-sub {
+  font-size: 1.5em; /*default for h3 is 1.17em*/
+}
+
+/* page content */
+.content {
+  padding: 1% 15%;
+  margin-bottom: 5%;
+}
+.content__h1 {
+  margin: 1.5em 0 0.67em 0;
+  font-size: 1.9em;
+  letter-spacing: 2px;
+  color: #0f2e5e;
+}
+.content__h2 {
+  margin: 1em 0 0.67em 0;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #D98943;
+}
+.content__p {
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+figure {
+  margin-top: 3%;
+  text-align: center;
+  font-style: italic;
+}
+figure img {
+  width: 50%;
+}
+
+li {
+  padding: 0 0 1% 8.8px;
+}
+
+.school-logo {
+  width: 20%;
+  display: block;
+  margin: 4% auto 0 auto;
+}
+
+.icon-box a{
+  text-decoration: none;
+}
+.icons {
+  color: #0f2e5e;
+  font-size: 1.8em;
+  font-family: inherit;
+  padding: 2% 1%;
+  vertical-align: middle;
+}
+.icons:hover,
+.icon-box:hover {
+  color: #D98943;
+}
+
+.contact-img {
+  float: right;
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 50%;
+}
+
+.content-404 {
+  text-align: center;
+}
+.larger-font {
+  font-size: 3em;
+  margin-bottom: 1%;
+}
+
+.container {
+  margin: 0 auto; /*center*/
+  padding: 0 20px;
+}
+footer {
+  background: #353535;
+  padding: 2% 0;
+  text-align: center;
+  color: #868686;
+}
+footer ul {
+  margin: 0;
+  padding: 2%;
+  list-style: none;
+}
+footer li {
+  display: inline-block;
+  padding: 0;
+}
+footer li a {
+  padding: 6px;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+footer li a:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1253px) {
+  .title__text-heading {
+    font-size: 2.4em; /*default for h1 is 2em*/
+  }
+  .title__text-sub {
+    font-size: 1.2em;
+  }
+  .content {
+    padding: 1% 10%;
+  }
+}
+@media screen and (max-width: 1144px) {
+  .navbar__item {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body {
+    padding-top: 18%;
+  }
+  .navbar__item {
+    width: 40%;
+  }
+  .navbar__item:hover{
+    background-color: #0f2e5e;
+    color: #D98943;
+  }
+  .title__text-heading {
+    font-size: 2.1em;
+  }
+  .title__text-sub {
+    font-size: 1.1em;
+  }
+  .content {
+    padding: 1% 5%;
+  }
+  figure img {
+    width: 60%;
+  }
+  .school-logo {
+    width: 30%;
+  }
+
+}
+@media screen and (max-width: 660px) {
+  body {
+    padding-top: 22%;
+  }
+  .content {
+    font-size: 70%;
+  }
+  figure img {
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 570px) {
+  .title__img {
+    height: 25vh;
+  }
+  .title__text-heading {
+    font-size: 2em;
+  }
+  .title__text-sub {
+    font-size: 0.9em;
+  }
+  .school-logo {
+    width: 35%;
+  }
+  .contact-img {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 455px) {
+  body {
+    padding-top: 43%;
+  }
+  .navbar__item {
+    width: 80%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .title__text-heading {
+    font-size: 1.5em;
+  }
+  .title__text-sub {
+    font-size: 0.7em;
+  }
+  .school-logo {
+    width: 40%;
+    margin: 5% auto 0 auto;
+  }
+  footer li {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1051px) {
+  .navbar__item:hover{
+    margin-bottom: 5px;
+    box-shadow: 0 5px 0 0 #0f2e5e;
+  }
+}
